@@ -218,3 +218,33 @@ nav {
 }
 
 }
+form {
+    max-width:600px;
+    margin:auto;
+    text-align:left;
+}
+
+form label {
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+form input,
+form textarea,
+form select {
+
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+
+}
+
+form button {
+    margin-top:20px;
+    border:none;
+    cursor:pointer;
+}

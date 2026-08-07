@@ -190,3 +190,31 @@ nav {
 }
 
 }
+.mobile-contact {
+    display:none;
+}
+
+
+@media(max-width:700px){
+
+.mobile-contact {
+    display:flex;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:999;
+}
+
+.mobile-contact a {
+    flex:1;
+    text-align:center;
+    padding:15px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    background:#c62828;
+    border-right:1px solid white;
+}
+
+}

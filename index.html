@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+```
 <title>Buckeye Lake Handyman LLC | Reliable Home Repairs Done Right</title>
 
 <meta name="description" content="Buckeye Lake Handyman LLC provides reliable home repairs, drywall repair, appliance repair, plumbing repairs, electrical repairs, tree trimming, and general handyman services throughout Buckeye Lake and Central Ohio.">
@@ -14,11 +15,13 @@
 <meta name="author" content="Buckeye Lake Handyman LLC">
 
 <link rel="stylesheet" href="styles.css">
+```
 
 </head>
 
 <body>
 
+```
 <!-- HEADER -->
 <header>
     <div class="container header-content">
@@ -183,15 +186,98 @@
 </section>
 
 
-<!-- CONTACT -->
+<!-- CONTACT / FREE ESTIMATE FORM -->
 <section id="contact" class="section contact">
     <div class="container">
 
-        <h2>Ready to Get Started?</h2>
+        <h2>Get Your Free Estimate</h2>
 
-        <p>
-            Contact Buckeye Lake Handyman LLC today for a free estimate.
+        <p class="section-intro">
+            Tell us about your project and upload photos if you have them.
+            We'll review your request and get back to you.
         </p>
+
+        <form
+            action="https://formsubmit.co/buckeyelakehandyman@gmail.com"
+            method="POST"
+            enctype="multipart/form-data"
+        >
+
+            <input type="hidden" name="_subject" value="New Free Estimate Request - Buckeye Lake Handyman LLC">
+
+            <input type="hidden" name="_template" value="table">
+
+            <input type="hidden" name="_captcha" value="true">
+
+            <input type="text" name="_honey" style="display:none">
+
+            <label for="name">Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+            >
+
+            <label for="phone">Phone</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="614-555-5555"
+                required
+            >
+
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+            >
+
+            <label for="service">What do you need help with?</label>
+            <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="Drywall & Wall Repair">Drywall & Wall Repair</option>
+                <option value="Appliance Repair">Appliance Repair</option>
+                <option value="Plumbing Repairs">Plumbing Repairs</option>
+                <option value="Electrical Repairs">Electrical Repairs</option>
+                <option value="Tree Trimming">Tree Trimming</option>
+                <option value="General Home Repairs">General Home Repairs</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="message">Tell us about your project</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Describe the repair or project you need help with..."
+                required
+            ></textarea>
+
+            <label for="attachment">Upload Photos</label>
+            <input
+                type="file"
+                id="attachment"
+                name="attachment"
+                accept="image/png, image/jpeg, image/webp"
+                multiple
+            >
+
+            <p style="font-size: 0.9rem; margin-top: 8px;">
+                Photos are optional. You can select multiple photos.
+                Please keep the total upload size under 10 MB.
+            </p>
+
+            <button class="button primary" type="submit">
+                Request a Free Estimate
+            </button>
+
+        </form>
 
         <div class="contact-buttons">
 
@@ -237,6 +323,7 @@
 
     </div>
 </footer>
+```
 
 </body>
 </html>
